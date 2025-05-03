@@ -16,7 +16,7 @@ body {
 
 .poster-row {
   display: flex;
-  gap: 100px;
+  gap: 150px;
   justify-content: center;
   align-items: flex-start;
 }
