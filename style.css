@@ -30,9 +30,11 @@ body {
 }
 
 .poster-container {
+  display: block;
   width: 100%;
   max-width: 420px;
-  margin-bottom: 60px;
+  margin: 0 auto 60px auto; /* forces vertical spacing */
+  padding-bottom: 30px;
 }
 
 .poster-card {
