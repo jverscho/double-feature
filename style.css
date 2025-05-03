@@ -17,13 +17,13 @@ body {
 .poster-row {
   display: flex;
   gap: 20px;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .poster-card {
   text-align: center;
-  width: 100%;
+  flex: 0 0 auto;
 }
 
 .poster-img {
