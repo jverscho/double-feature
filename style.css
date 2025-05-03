@@ -1,11 +1,14 @@
-/* styles.css (Double Feature Mobile Optimized) */
+/* styles.css (Double Feature Mobile Optimized + Transparent) */
 
 * {
   box-sizing: border-box;
 }
 
+html, body, .poster-row, .poster-card {
+  background: transparent !important;
+}
+
 body {
-  background: transparent;
   margin: 0;
   font-family: 'DM Sans', sans-serif;
   display: flex;
