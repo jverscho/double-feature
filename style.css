@@ -35,11 +35,16 @@ body {
   padding-bottom: 40px;
 }
 
+.poster-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
 .poster-card {
   text-align: center;
   width: 100%;
   max-width: 400px;
-  margin: 0 auto;
 }
 
 .poster-img {
