@@ -1,3 +1,5 @@
+/* styles.css */
+
 * {
   box-sizing: border-box;
 }
@@ -14,13 +16,14 @@ body {
 
 .poster-row {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
 }
 
 .poster-card {
   text-align: center;
+  width: 100%;
 }
 
 .poster-img {
@@ -32,7 +35,7 @@ body {
 }
 
 .view-button {
-  margin-top: 10px;
+  margin-top: 6px;
   padding: 6px 16px;
   background-color: #ffce10;
   color: #000;
