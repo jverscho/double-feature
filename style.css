@@ -82,7 +82,7 @@ body {
 
   .poster-img {
     width: 100%;
-    height: auto;
+    height: 600px;
     aspect-ratio: 2 / 3;
   }
 }
