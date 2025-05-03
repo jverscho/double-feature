@@ -1,4 +1,4 @@
-/* styles.css (Double Feature Mobile Optimized + Transparent) */
+/* styles.css (Double Feature Responsive Scaling, Fixed Size Preserved) */
 
 * {
   box-sizing: border-box;
@@ -24,17 +24,20 @@ body {
   gap: 200px;
   justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .poster-card {
   text-align: center;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   margin: 0 auto;
 }
 
 .poster-img {
-  width: 400px;
-  height: 600px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
