@@ -51,6 +51,7 @@ body {
   display: inline-block;
   font-weight: 700;
   text-transform: none;
+  
 }
 .poster-title {
   text-align: center;
@@ -63,21 +64,6 @@ body {
   color: #e6e3df;
   font-weight: 500;
   margin: 0;
-}
-
-.poster-title .subtitle {
-  font-size: 10px;
-  color: #ffce10;
-  font-weight: italic;
-  margin-top: 5px;
-  letter-spacing: 1px;
-}
-
-.poster-title .cast {
-  font-size: 10px;
-  font-style: italic;
-  color: #ffce10;
-  margin-top: 2px;
 }
 
 .poster-title .time-rating {
