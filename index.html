@@ -18,5 +18,15 @@
       <a href="https://www.sunsetdriveinslo.com/the-amateur" target="_blank" rel="noopener noreferrer" class="view-button">View Trailer</a>
     </div>
   </div>
+  <script>
+  function checkRedirect() {
+    if (window.innerWidth <= 768) {
+      window.location.href = "https://www.sunsetdriveinslo.com/mobile";
+    }
+  }
+
+  window.onload = checkRedirect;
+  window.onresize = checkRedirect;
+</script>
 </body>
 </html>
