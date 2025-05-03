@@ -97,11 +97,8 @@ body {
   }
 
   .poster-card {
-    width: 95vw;
+    width: 90vw;
     max-width: 400px;
-    margin-bottom: 40px;
-    height: auto;
-    overflow: visible;
   }
 
   .poster-img {
