@@ -28,7 +28,7 @@ body {
 .poster-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 175px;
+  gap: 150px;
   justify-content: center;
   align-items: flex-start;
   width: 100%;
