@@ -1,4 +1,4 @@
-/* styles.css (Double Feature Responsive Scaling + Full Height) */
+/* styles.css (Double Feature: Mobile Scroll Fixes) */
 
 * {
   box-sizing: border-box;
@@ -8,23 +8,28 @@ html, body, .poster-row, .poster-card {
   background: transparent !important;
 }
 
-body {
+html, body {
   margin: 0;
   font-family: 'DM Sans', sans-serif;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  align-items: flex-start;
   padding: 40px 0;
-  overflow-x: hidden;
 }
 
 .poster-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 200px;
   justify-content: center;
   align-items: flex-start;
-  flex-wrap: wrap;
 }
 
 .poster-card {
@@ -60,6 +65,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding: 30px 0;
+  }
+
   .poster-row {
     flex-direction: column;
     align-items: center;
@@ -75,5 +84,11 @@ body {
     width: 100%;
     height: auto;
     aspect-ratio: 2 / 3;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px 0;
   }
 }
