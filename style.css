@@ -1,4 +1,4 @@
-/* styles.css (Double Feature Responsive Scaling, Fixed Size Preserved) */
+/* styles.css (Double Feature Responsive Scaling + Full Height) */
 
 * {
   box-sizing: border-box;
@@ -15,13 +15,13 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 20px 0;
+  padding: 40px 0;
   overflow-x: hidden;
 }
 
 .poster-row {
   display: flex;
-  gap: 175px;
+  gap: 200px;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
