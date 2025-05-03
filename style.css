@@ -1,4 +1,4 @@
-/* styles.css (Double Feature Centered Layout Fix) */
+/* styles.css (Double Feature Mobile Optimized) */
 
 * {
   box-sizing: border-box;
@@ -11,7 +11,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 20px 0;
+  overflow-x: hidden;
 }
 
 .poster-row {
@@ -59,12 +61,13 @@ body {
   }
 
   .poster-card {
-    width: 90vw;
+    width: 95vw;
     max-width: 400px;
   }
 
   .poster-img {
     width: 100%;
     height: auto;
+    aspect-ratio: 2 / 3;
   }
 }
