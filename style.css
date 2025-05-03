@@ -69,35 +69,49 @@ body {
 
 @media (max-width: 768px) {
   html, body {
+    min-height: 100vh;
     height: auto;
-    overflow-y: auto;
     overflow-x: hidden;
+    overflow-y: visible;
+    padding: 0;
+    margin: 0;
   }
 
   body {
-    padding: 30px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 30px 0;
   }
 
   .poster-row {
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     width: 100%;
-    padding-bottom: 40px;
+    height: auto;
+    min-height: auto;
+    overflow: visible;
+    padding-bottom: 60px;
   }
 
   .poster-card {
     width: 95vw;
     max-width: 400px;
+    margin-bottom: 40px;
+    height: auto;
+    overflow: visible;
   }
 
   .poster-img {
     width: 100%;
     height: auto;
-    aspect-ratio: 2 / 3;
     object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .view-button {
+    margin-top: 10px;
   }
 }
