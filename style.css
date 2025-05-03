@@ -1,34 +1,52 @@
-/* styles.css */
+/* styles.css (scrollbar-free Google Sites layout) */
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: #111;
+  background: transparent;
   margin: 0;
   font-family: 'DM Sans', sans-serif;
+  height: 100%;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
-.poster-row {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: flex-start;
+.carousel-container {
+  perspective: 1000px;
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  height: 580px;
+  overflow: hidden;
 }
 
-.poster-card {
-  text-align: center;
-  flex: 0 0 auto;
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1s;
 }
 
-.poster-img {
+.carousel-item {
   width: 400px;
-  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform-origin: center center;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  margin-left: -200px;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 400px;
+  height: 560px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
@@ -48,4 +66,24 @@ body {
   display: inline-block;
   font-weight: 700;
   text-transform: none;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 2;
+  padding: 0 10px;
+}
+
+.controls button {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 50%;
 }
